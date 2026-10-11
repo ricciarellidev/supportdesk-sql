@@ -1,0 +1,15 @@
+{
+  "desktop": true,
+  "mobile": true,
+  "details": true,
+  "pagination": true,
+  "search": true,
+  "emptyState": true,
+  "openapiHttp": true,
+  "consoleErrors": [],
+  "date": "2026-10-11",
+  "browser": "Headless Chromium",
+  "databaseEngine": "PGlite PostgreSQL 18.3",
+  "desktopViewport": "1440 x 1050",
+  "mobileViewport": "390 x 844"
+}

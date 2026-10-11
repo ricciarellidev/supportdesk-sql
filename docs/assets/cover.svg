@@ -1,0 +1,109 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1280"
+    height="320"
+    viewBox="0 0 1280 320"
+    role="img"
+    aria-labelledby="title desc"
+>
+    <title id="title">SupportDesk SQL</title>
+    <desc id="desc">
+        Chamados de suporte, dados relacionais e indicadores de atendimento.
+        Java, PostgreSQL, SQL e testes.
+    </desc>
+    <defs>
+        <linearGradient id="bg" x2="1" y2="1">
+            <stop stop-color="#122236" />
+            <stop offset="1" stop-color="#243f5e" />
+        </linearGradient>
+    </defs>
+    <rect width="1280" height="320" rx="14" fill="url(#bg)" />
+    <circle cx="1190" cy="20" r="220" fill="#3458ee" opacity=".1" />
+    <circle cx="1150" cy="275" r="135" fill="#66d9be" opacity=".07" />
+    <rect x="58" y="53" width="40" height="42" rx="11" fill="#365bf1" />
+    <text
+        x="69"
+        y="83"
+        font-family="Arial,sans-serif"
+        font-size="30"
+        font-weight="700"
+        fill="white"
+    >
+        S
+    </text>
+    <circle cx="89" cy="85" r="3.5" fill="#6cdfbd" />
+    <text
+        x="113"
+        y="79"
+        font-family="Arial,sans-serif"
+        font-size="14"
+        letter-spacing="3"
+        fill="#a9bad0"
+    >
+        PORTFÓLIO BACK-END &amp; SQL
+    </text>
+    <text
+        x="56"
+        y="152"
+        font-family="Arial,sans-serif"
+        font-size="51"
+        font-weight="700"
+        letter-spacing="-1.5"
+        fill="#ffffff"
+    >
+        SupportDesk SQL
+    </text>
+    <text
+        x="59"
+        y="191"
+        font-family="Arial,sans-serif"
+        font-size="18"
+        fill="#a8bbd3"
+    >
+        Chamados organizados. Dados conectados. Indicadores claros.
+    </text>
+    <g font-family="Arial,sans-serif" font-size="12" fill="#d9e7f7">
+        <rect x="58" y="235" width="80" height="28" rx="5" fill="#2a4360" />
+        <text x="75" y="254">Java 17</text>
+        <rect x="148" y="235" width="107" height="28" rx="5" fill="#2a4360" />
+        <text x="164" y="254">PostgreSQL</text>
+        <rect x="265" y="235" width="113" height="28" rx="5" fill="#2a4360" />
+        <text x="281" y="254">SQL explícito</text>
+        <rect x="388" y="235" width="111" height="28" rx="5" fill="#2a4360" />
+        <text x="405" y="254">API &amp; testes</text>
+    </g>
+    <g transform="translate(872 82)">
+        <rect
+            width="285"
+            height="164"
+            rx="11"
+            fill="#152b43"
+            stroke="#3a526f"
+        />
+        <circle cx="20" cy="18" r="3" fill="#6ad3b8" />
+        <circle cx="32" cy="18" r="3" fill="#7d8fbe" />
+        <circle cx="44" cy="18" r="3" fill="#7d8fbe" />
+        <path d="M0 36h285" stroke="#304963" />
+        <rect x="18" y="57" width="75" height="8" rx="4" fill="#7a97ee" />
+        <rect x="18" y="76" width="138" height="5" rx="2" fill="#44627f" />
+        <rect x="18" y="100" width="222" height="5" rx="2" fill="#416080" />
+        <rect x="18" y="121" width="181" height="5" rx="2" fill="#416080" />
+        <rect x="18" y="140" width="96" height="5" rx="2" fill="#416080" />
+        <rect x="196" y="57" width="67" height="23" rx="5" fill="#254f4d" />
+        <path
+            d="m207 69 4 4 8-9"
+            fill="none"
+            stroke="#6ed8b8"
+            stroke-width="2"
+        />
+        <text
+            x="227"
+            y="72"
+            font-family="Arial,sans-serif"
+            font-size="9"
+            fill="#8de4ca"
+        >
+            SQL
+        </text>
+    </g>
+</svg>

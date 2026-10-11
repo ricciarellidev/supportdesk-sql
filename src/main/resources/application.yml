@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: supportdesk-sql
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5433/supportdesk}
+    username: ${DB_USER:supportdesk}
+    password: ${DB_PASSWORD:local_demo_only}
+    hikari:
+      maximum-pool-size: 8
+      connection-timeout: 10000
+  flyway:
+    locations: classpath:db/migration
+    clean-disabled: true
+  jackson:
+    deserialization:
+      accept-float-as-int: false
+  mvc:
+    problemdetails:
+      enabled: true
+server:
+  port: ${PORT:8080}
+  error:
+    include-message: never
+    include-stacktrace: never
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+logging:
+  pattern:
+    level: "%5p [requestId=%X{requestId:-}]"

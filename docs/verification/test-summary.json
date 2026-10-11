@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-11",
+  "java": "17.0.20",
+  "springBoot": "4.1.1",
+  "databaseEngine": "PostgreSQL 18.3 via PGlite 0.5.8",
+  "databaseMode": "Embedded WASM; JDBC simple protocol; one connection",
+  "flywayRuntimeVerified": false,
+  "migrationSqlExecuted": true,
+  "dockerExecutionVerified": false,
+  "githubActionsExecuted": false,
+  "mavenCommand": "clean verify",
+  "suites": [
+    {
+      "suite": "dev.ricciarelli.supportdesk.domain.PriorityTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "dev.ricciarelli.supportdesk.domain.TicketStatusTest",
+      "tests": 20,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "dev.ricciarelli.supportdesk.integration.CatalogApiIT",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "dev.ricciarelli.supportdesk.integration.ReportAndSqlIT",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "dev.ricciarelli.supportdesk.integration.TicketApiIT",
+      "tests": 25,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "total": {
+    "tests": 59,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "jacoco": {
+    "INSTRUCTION": {
+      "covered": 1986,
+      "missed": 23
+    },
+    "BRANCH": {
+      "covered": 62,
+      "missed": 8
+    },
+    "LINE": {
+      "covered": 419,
+      "missed": 6
+    },
+    "COMPLEXITY": {
+      "covered": 155,
+      "missed": 9
+    },
+    "METHOD": {
+      "covered": 127,
+      "missed": 1
+    },
+    "CLASS": {
+      "covered": 34,
+      "missed": 0
+    }
+  }
+}

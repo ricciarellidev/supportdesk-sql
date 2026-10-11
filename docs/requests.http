@@ -1,0 +1,78 @@
+@baseUrl = http://localhost:8080
+# Depois de executar a abertura, substitua 9 pelo ticket.id recebido.
+@ticketId = 9
+@actorId = 3
+@agentId = 4
+
+### Saúde
+GET {{baseUrl}}/actuator/health
+
+### Catálogos
+GET {{baseUrl}}/api/v1/users
+
+### Categorias
+GET {{baseUrl}}/api/v1/categories
+
+### Abrir chamado — dados de demonstração
+POST {{baseUrl}}/api/v1/tickets
+Content-Type: application/json
+X-Request-Id: demo_create
+
+{
+  "title": "Investigar relatório de estoque",
+  "description": "Revisar uma consulta SQL de um ambiente fictício.",
+  "requesterId": 1,
+  "categoryId": 2,
+  "priority": "HIGH"
+}
+
+### Atribuir agente ativo
+PATCH {{baseUrl}}/api/v1/tickets/{{ticketId}}/assignment
+Content-Type: application/json
+
+{"agentId": {{agentId}}, "actorId": {{actorId}}}
+
+### Iniciar atendimento
+PATCH {{baseUrl}}/api/v1/tickets/{{ticketId}}/status
+Content-Type: application/json
+
+{"status": "IN_PROGRESS", "actorId": {{actorId}}, "message": "Investigação iniciada."}
+
+### Comentar
+POST {{baseUrl}}/api/v1/tickets/{{ticketId}}/comments
+Content-Type: application/json
+
+{"actorId": {{actorId}}, "message": "Consulta com JOIN validada no ambiente de estudo."}
+
+### Resolver
+PATCH {{baseUrl}}/api/v1/tickets/{{ticketId}}/status
+Content-Type: application/json
+
+{"status": "RESOLVED", "actorId": {{actorId}}, "message": "Resultado do relatório conferido."}
+
+### Encerrar
+PATCH {{baseUrl}}/api/v1/tickets/{{ticketId}}/status
+Content-Type: application/json
+
+{"status": "CLOSED", "actorId": {{actorId}}, "message": "Validação concluída."}
+
+### Consultar o histórico antes de arquivar
+GET {{baseUrl}}/api/v1/tickets/{{ticketId}}
+
+### Arquivar — apenas depois de encerrar
+DELETE {{baseUrl}}/api/v1/tickets/{{ticketId}}?actorId={{actorId}}
+
+### Filtrar e paginar
+GET {{baseUrl}}/api/v1/tickets?status=OPEN&priority=HIGH&page=0&size=5
+
+### Visão geral
+GET {{baseUrl}}/api/v1/reports/overview
+
+### SLA
+GET {{baseUrl}}/api/v1/reports/sla
+
+### Categorias
+GET {{baseUrl}}/api/v1/reports/by-category
+
+### Agentes
+GET {{baseUrl}}/api/v1/reports/by-agent
